@@ -34,7 +34,7 @@ public class AppTest
     {
         App.main(null);
         try {
-            assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
+            assertEquals("Hello World! BRK" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
             fail("\"message\" is not \"Hello World! \"");
         }
@@ -45,7 +45,7 @@ public class AppTest
     {
         try {
             int res=App.calc(5,10);
-            int expected=5*10;
+            int expected=5+10;
             assertEquals(expected, res);
         } catch (AssertionError e1) {
             fail("Not 50");
